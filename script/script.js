@@ -1,33 +1,20 @@
-//Toggling Menu
-const showMenu = (toggleId, navId) =>
+const menu = document.querySelector('.bars');
+let menustate = false;
+menu.addEventListener('click', showMenu);
+function showMenu()
 {
-    const toggle = document.getElementById(toggleId);
-    const nav = document.getElementById(navId);
-
-    if (toggle && nav)
+    if (!menustate)
     {
-        toggle.addEventListener('click', () =>
-        {
-            nav.classList.toggle('show');
-        })
+        menu.classList.add('is-active');
+        document.querySelector('.nav-links').classList.add('open');
+        menustate = true;
+    } else
+    {
+        menu.classList.remove('is-active');
+        document.querySelector('.nav-links').classList.remove('open');
+        menustate = false;
     }
 }
-
-showMenu('nav-toggle', 'nav-menu');
-
-//Toggling Active Link
-const navLink = document.querySelectorAll('.nav-link');
-
-function linkAction()
-{
-    navLink.forEach(n => n.classList.remove('active'));
-    this.classList.add('active');
-
-    const navMenu = document.getElementById('nav-menu');
-    navMenu.classList.remove('show');
-}
-
-navLink.forEach(n => n.addEventListener('click', linkAction));
 
 // Scroll Reveal
 
