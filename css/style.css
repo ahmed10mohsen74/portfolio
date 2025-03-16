@@ -164,6 +164,8 @@ img {
     width: 295px;
     height: 295px;
     border-radius: 50%;
+    position: relative;
+    top: 1rem;
 }
 
 .button {
