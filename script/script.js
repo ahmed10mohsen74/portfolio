@@ -1,3 +1,6 @@
+
+// send email massage
+
 const menu = document.querySelector('.bars');
 let menustate = false;
 menu.addEventListener('click', showMenu);
