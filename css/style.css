@@ -488,13 +488,14 @@ header {
 header h2 {
     color: #D6D6D6;
     font-size: 1.2rem;
+        
 }
 
 header .logo {
     display: flex;
     align-items: center;
     padding: 1vh 1vw;
-    font-family: 'Turret Road', sans-serif;
+    font-family:  sans-serif;
 }
 
 header .bars {
