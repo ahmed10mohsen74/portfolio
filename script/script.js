@@ -41,7 +41,7 @@ function closeMenu()
 
 
 
-const texts = ["Web Designer", "Front End Developer"]; // النصوص المتغيرة
+const texts = ["Web Designer", "Front End Developer", "UI/UX Designer", "Creative Coder", "Freelancer"]; // النصوص المتغيرة
 const typingElement = document.getElementById("typing");
 let textIndex = 0;
 let charIndex = 0;
