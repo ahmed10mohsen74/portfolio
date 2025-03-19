@@ -592,7 +592,9 @@ header .bars::before {
     /* إخفاء النص الزائد */
     width: fit-content;
 }
-
+.min{
+    min-height: 75px;
+}
 @media only screen and (max-width: 768px) {
     header .logo {
         margin-right: 50px;

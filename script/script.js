@@ -106,3 +106,4 @@ sr.reveal('.skills-img', { delay: 400 })
 sr.reveal('.work-img', { interval: 200 })
 
 sr.reveal('.contact-input', { interval: 200 })
+sr.reveal('#typing', { delay: 200 })
