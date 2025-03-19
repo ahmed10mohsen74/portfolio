@@ -2,22 +2,47 @@
 // send email massage
 
 const menu = document.querySelector('.bars');
+const navLinks = document.querySelector('.nav-links');
+const menuItems = document.querySelectorAll('.nav-links li');
 let menustate = false;
+
 menu.addEventListener('click', showMenu);
+
+// دالة فتح وإغلاق المينيو
 function showMenu()
 {
     if (!menustate)
     {
         menu.classList.add('is-active');
-        document.querySelector('.nav-links').classList.add('open');
+        navLinks.classList.add('open');
         menustate = true;
     } else
     {
-        menu.classList.remove('is-active');
-        document.querySelector('.nav-links').classList.remove('open');
-        menustate = false;
+        closeMenu();
     }
 }
+
+// إغلاق المينيو عند الضغط على أي عنصر من عناصر القائمة
+menuItems.forEach(item =>
+{
+    item.addEventListener('click', closeMenu);
+});
+
+// إغلاق المينيو عند التمرير (السكرول)
+window.addEventListener('scroll', closeMenu);
+
+function closeMenu()
+{
+    menu.classList.remove('is-active');
+    navLinks.classList.remove('open');
+    menustate = false;
+}
+
+
+
+
+
+
 
 // Scroll Reveal
 
