@@ -39,7 +39,7 @@ function closeMenu()
 }
 
 
-
+// typing effect
 
 const texts = ["Web Designer", "Front End Developer", "UI/UX Designer", "Creative Coder", "Freelancer"]; // النصوص المتغيرة
 const typingElement = document.getElementById("typing");
