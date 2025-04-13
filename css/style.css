@@ -6,24 +6,25 @@
 
     --first-color: #4070F4;
     --second-color: #0E2431;
-    
+
     --body-font: 'Poppins', sans-serif;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: .938rem;
-    
+
     --mb1: .5rem;
     --mb2: 1rem;
     --mb3: 1.5rem;
     --mb4: 2rem;
     --mb5: 2.5rem;
     --mb6: 3rem;
-    
+
     --z-back: -10;
     --z-normal: 1;
     --z-tooltip: 10;
     --z-fixed: 100;
 }
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -49,7 +50,7 @@ html {
 }
 
 body {
-   
+
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--second-color);
@@ -288,6 +289,9 @@ img {
 .work-img img {
     transition: 1s;
     cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .work-img img:hover {
@@ -462,6 +466,7 @@ img {
         right: 0;
     }
 }
+
 /* header */
 
 ul {
@@ -488,14 +493,14 @@ header {
 header h2 {
     color: #D6D6D6;
     font-size: 1.2rem;
-        
+
 }
 
 header .logo {
     display: flex;
     align-items: center;
     padding: 1vh 1vw;
-    font-family:  sans-serif;
+    font-family: sans-serif;
 }
 
 header .bars {
@@ -579,11 +584,12 @@ header .bars::before {
     border-radius: 50%;
     margin: 0 0.7vw;
 }
+
 #typing {
     font-size: 2rem;
     font-weight: bold;
     color: var(--first-color);
-    
+
     border-right: 3px solid white;
     /* المؤشر */
     white-space: nowrap;
@@ -592,9 +598,11 @@ header .bars::before {
     /* إخفاء النص الزائد */
     width: fit-content;
 }
-.min{
+
+.min {
     min-height: 75px;
 }
+
 @media only screen and (max-width: 768px) {
     header .logo {
         margin-right: 50px;
